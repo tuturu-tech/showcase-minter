@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Retro Gaming";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Retro Gaming"), url("./fonts/Retro Gaming.woff") format("woff");
+}
+
+.animate__animated {
+  --animate-duration: 0.2s;
+}
