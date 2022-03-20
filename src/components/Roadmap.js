@@ -17,13 +17,13 @@ const Roadmap = () => {
           <div className="flex md:contents">
             <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 mt-32 bg-[#d41efc] pointer-events-none"></div>
+                <div className="h-full w-1 mt-44 lg:mt-32 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4 h-full">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">**Q1 2022** </span>
@@ -35,7 +35,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -51,7 +51,7 @@ const Roadmap = () => {
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
-              <div className=" h-1 w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
+              <div className=" h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
 
@@ -64,7 +64,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -78,7 +78,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 p-[2px] my-4 w-full ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 w-full ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">**40% SOLD**</span>
@@ -91,7 +91,7 @@ const Roadmap = () => {
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
-              <div className="h-1 w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
+              <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -117,7 +117,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -135,7 +135,7 @@ const Roadmap = () => {
                 <div className="h-full z-10 w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
-              <div className="h-1 w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
+              <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
 
@@ -148,7 +148,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -162,7 +162,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -178,20 +178,20 @@ const Roadmap = () => {
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
-              <div className="h-1 w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
+              <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
 
           <div className="flex md:contents">
             <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full mb-28 w-1 bg-[#d41efc] pointer-events-none"></div>
+                <div className="h-full mb-36 lg:mb-32 w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 w-full my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 w-full my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] h-full rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
