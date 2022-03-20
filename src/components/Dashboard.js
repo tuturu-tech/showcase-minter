@@ -5,7 +5,7 @@ const Dashboard = () => {
     <div className="flex flex-col items-center h-screen w-11/12 md:w-10/12 mx-auto">
       <div className="rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400 w-11/12 shadow-2xl shadow-white/10 mb-10">
         <div className="flex flex-col items-center gap-y-16 w-full h-full bg-[#28299f] rounded-2xl shadow-inner shadow-black/50">
-          <h2 className="uppercase text-2xl md:text-4xl mt-16">
+          <h2 className="uppercase text-2xl md:text-4xl mt-16 text-center">
             LOREM IPSUM DUMMY TEXT
           </h2>
           <div className="flex flex-row items-center justify-between divide-x-[1px] divide-solid divide-[#d41efc]">
