@@ -69,7 +69,7 @@ const Navigation = () => {
         <div
           ref={contentSpace}
           style={{ maxHeight: `${height}` }}
-          className="absolute top right-0 bg-[#28299f] shadow-lg text-white transition-max-height duration-700 ease-in-out overflow-hidden pl-5 pr-5"
+          className="absolute top right-0 bg-[#28299f] shadow-lg text-white transition-max-height duration-700 ease-in-out overflow-hidden pl-5 pr-5 rounded-2xl"
         >
           <div className="flex flex-col justify-center mb-1 items-center pb-2 pt-2 text-md sm:text-lg">
             {isContractOwner && (
