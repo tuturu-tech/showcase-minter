@@ -153,7 +153,9 @@ export function Input({
 }) {
   readOnly = readOnly || onChange === undefined;
   return (
-    <label className={`flex flex-col mt-4 w-full ${className ?? ""}`}>
+    <label
+      className={`flex flex-col mt-4 w-full text-white ${className ?? ""}`}
+    >
       <span
         className={`text-sm px-1 ${
           disabled ? "text-gray-400" : " text-gray-200"

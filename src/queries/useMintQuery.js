@@ -12,15 +12,12 @@ export function useMintQuery() {
     const owner = await erc721.owner();
     const totalSupply = await erc721.totalSupply();
     const maxSupply = await erc721.maxSupply();
-    const price = await erc721.getCurrentPrice();
-    const startingPrice = await erc721.startingPrice();
-    const minimumPrice = await erc721.minimumPrice();
-    const decrementInterval = await erc721.decrementInterval();
-    const decrementAmount = await erc721.decrementAmount();
-    const auctionStart = await erc721.auctionStart();
-    const timeLeft = await erc721.getTimeLeft();
+    const pricePS = await erc721.pricePS();
+    const priceWL = await erc721.priceWL();
+    const priceGenesis = await erc721.priceGenesis();
+    const maxMint = await erc721.maxMint();
 
-    const auctionActive = await erc721.isActive();
+    const saleState = await erc721.saleState();
 
     const isContractOwner =
       account && owner && account.toLowerCase() === owner.toLowerCase();
@@ -28,16 +25,13 @@ export function useMintQuery() {
     return {
       owner,
       maxSupply,
-      price,
-      startingPrice,
-      minimumPrice,
-      decrementInterval,
-      decrementAmount,
-      auctionStart,
-      auctionActive,
+      pricePS,
+      priceWL,
+      priceGenesis,
+      saleState,
       totalSupply,
       isContractOwner,
-      timeLeft,
+      maxMint,
     };
   };
   return useChainQuery({ key, fetchState });

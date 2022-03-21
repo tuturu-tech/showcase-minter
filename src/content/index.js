@@ -122,7 +122,7 @@ export default {
       },
     },
     {
-      name: "Akibio",
+      name: "Akiboi",
       title: "Co-Founder/Lead Artist",
       description:
         "An establish architect, who is now with the Nasty Builders, a graduate of Oxford Brookes University who creates all the unique traits of the Babyboss and also an advisor for few others project before.",

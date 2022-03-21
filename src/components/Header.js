@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Link from "react-scroll/modules/components/Link";
+import { useMintQuery } from "../queries";
+import { Button, Modal } from "../lib/Primitives";
+import AdminPanel from "./AdminPanel";
 
 import { WalletButton } from "../lib";
 import { images } from "../constants";
@@ -7,8 +10,10 @@ import video from "../assets/headerVideo.mp4";
 import { RiPlayCircleFill } from "react-icons/ri";
 
 const Header = () => {
+  const [adminModalOpen, setAdminModalOpen] = useState(false);
   const [controls, setControls] = useState(false);
   const headerVideo = document.getElementById("headerVideo");
+  const [{ isContractOwner }, updateMintState] = useMintQuery();
 
   return (
     <div
@@ -75,6 +80,26 @@ const Header = () => {
         <WalletButton className="uppercase p-2 w-50 pt-3 pb-3 pr-6 pl-6 bg-[#1e50ff] rounded-full text-sm hover:ring-2 ring-white text-white">
           Connect Wallet
         </WalletButton>
+        {isContractOwner && (
+          <div className="m-8">
+            <Button
+              className="uppercase bg-[#8b514c] rounded-full hover:ring-2 ring-white font-[Helvetica_Neue] font-bold text-white"
+              onClick={() => setAdminModalOpen(true)}
+            >
+              Admin Panel
+            </Button>
+            {adminModalOpen && (
+              <>
+                <Modal
+                  open={adminModalOpen}
+                  onClose={() => setAdminModalOpen(false)}
+                >
+                  <AdminPanel />
+                </Modal>
+              </>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

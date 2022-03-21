@@ -3,7 +3,7 @@ import { useTx } from "./useTx";
 import { config } from "../config";
 import { usePriorityProvider } from "../lib/connectors";
 
-const { abi: erc721ABI } = require("../data/Abstracto.json");
+const { abi: erc721ABI } = require("../data/BabyBoss.json");
 
 export const ERC721 = new ethers.Contract(config.erc721Address, erc721ABI);
 

@@ -9,9 +9,10 @@ const initialState = {
   baseURI: "",
   unrevealedURI: "",
   balance: "0",
-  decrementAmount: "0",
-  decrementInterval: "0",
   revealTime: "0",
+  reserveMinted: "0",
+  withdrawalAddress: "",
+  reserved: "0",
 };
 
 export function useMintAdminState() {
@@ -21,10 +22,12 @@ export function useMintAdminState() {
     name: await erc721.name(),
     symbol: await erc721.symbol(),
     baseURI: await erc721.baseURI(),
+    unrevealedURI: await erc721.unrevealedURI(),
     balance: await erc721?.provider.getBalance(erc721.address),
-    decrementInterval: await erc721.decrementInterval(),
-    decrementAmount: await erc721.decrementAmount(),
     revealTime: await erc721.revealTime(),
+    reserveMinted: await erc721.reserveMinted(),
+    withdrawalAddress: await erc721.withdrawalAddress(),
+    reserved: await erc721.reserved(),
   });
 
   return useChainQuery({ key, fetchState, initialState });

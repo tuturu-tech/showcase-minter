@@ -3,11 +3,80 @@ import { ethers } from "ethers";
 import { useContracts, useParty } from "../hooks";
 import { useMintQuery } from "../queries";
 import { usePriorityIsActive, usePriorityProvider } from "../lib/connectors";
+import { LoadingButton } from "../lib/Primitives";
 
 import { images } from "../constants";
 
 const Mint = () => {
   const [amount, setAmount] = useState(1);
+  const [isMinting, setIsMinting] = useState(false);
+
+  const provider = usePriorityProvider();
+  const { erc721, handleTxError, handleTx } = useContracts();
+  const [
+    {
+      owner,
+      maxSupply,
+      pricePS,
+      priceWL,
+      priceGenesis,
+      saleState,
+      totalSupply,
+      isContractOwner,
+      maxMint,
+    },
+    updateMintState,
+  ] = useMintQuery();
+
+  const startParty = useParty();
+
+  const signer = provider?.getSigner();
+
+  const amountLeft =
+    (totalSupply && maxSupply - totalSupply?.toNumber()) || "loading...";
+  const isSoldOut = amountLeft === 0;
+
+  const onMintHandler = () => {
+    setIsMinting(true);
+    erc721
+      .connect(signer)
+      .mint(amount, { value: pricePS.mul(amount) })
+      .then(handleTx)
+      .then(startParty)
+      .then(updateMintState)
+      .catch(handleTxError)
+      .finally(() => {
+        setTimeout(() => setIsMinting(false), 300);
+      });
+  };
+
+  const WLMint = () => {
+    setIsMinting(true);
+    erc721
+      .connect(signer)
+      .whitelistMint(amount, { value: priceWL.mul(amount) })
+      .then(handleTx)
+      .then(startParty)
+      .then(updateMintState)
+      .catch(handleTxError)
+      .finally(() => {
+        setTimeout(() => setIsMinting(false), 300);
+      });
+  };
+
+  const genesisMint = () => {
+    setIsMinting(true);
+    erc721
+      .connect(signer)
+      .genesisMint(amount, { value: priceGenesis.mul(amount) })
+      .then(handleTx)
+      .then(startParty)
+      .then(updateMintState)
+      .catch(handleTxError)
+      .finally(() => {
+        setTimeout(() => setIsMinting(false), 300);
+      });
+  };
 
   return (
     <div
@@ -21,7 +90,11 @@ const Mint = () => {
       />
       <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-">
         <h2 className="uppercase text-4xl mb-4">MINT A BABY</h2>
-        <p className="mb-4">0/3999 Minted at each 0.01ETH</p>
+        <p className="mb-4">
+          {totalSupply ? totalSupply?.toString() : "loading..."}/
+          {maxSupply ? maxSupply.toString() : "loading..."} Minted at each{" "}
+          {pricePS ? ethers.utils.formatEther(pricePS) + " ETH" : "loading..."}
+        </p>
         <p className="text-center md:text-left">
           Welcome to BabyBoss exclusive clud.
           <br />
@@ -62,9 +135,14 @@ const Mint = () => {
           >
             +
           </button>
-          <button className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white">
+          <LoadingButton
+            loading={isMinting}
+            disabled={!signer || isMinting || isSoldOut}
+            className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white"
+            onClick={onMintHandler}
+          >
             Mint A Baby
-          </button>
+          </LoadingButton>
         </div>
       </div>
     </div>
