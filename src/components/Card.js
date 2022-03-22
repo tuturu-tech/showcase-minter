@@ -11,15 +11,7 @@ const Card = ({ image, alt, name, title, description, socials, hover }) => {
         <h2 className="text-black font-bold mb-2 text-xl ">{name}</h2>
         <h2 className="text-purple-500 font-bold mb-2">{title}</h2>
         <p className="text-blue-900 mb-6 text-center">{description}</p>
-        <div className="absolute grid grid-cols-3 gap-x-2 items-center bottom-0 mb-4">
-          <a
-            href={socials.facebook}
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center justify-center p-2 bg-gray-500 group-hover:bg-purple-600 rounded-full h-10 w-10 hover:ring-1 ring-pink-500"
-          >
-            <RiFacebookFill className="h-10 w-10 text-white" />
-          </a>
+        <div className="absolute flex flex-row gap-x-2 items-center bottom-0 mb-4">
           <a
             href={socials.twitter}
             target="_blank"

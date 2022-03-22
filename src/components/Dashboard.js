@@ -6,38 +6,17 @@ const Dashboard = () => {
       <div className="rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400 w-11/12 shadow-2xl shadow-white/10 mb-10">
         <div className="flex flex-col items-center gap-y-16 w-full h-full bg-[#28299f] rounded-2xl shadow-inner shadow-black/50">
           <h2 className="uppercase text-2xl md:text-4xl mt-16 text-center">
-            LOREM IPSUM DUMMY TEXT
+            BABY BOSS
           </h2>
           <div className="flex flex-row items-center justify-between divide-x-[1px] divide-solid divide-[#d41efc]">
-            <div className="flex flex-col items-center justify-center uppercase p">
-              <h4 className="text-[10px] md:text-xs font-bold pr-5 pl-10 md:pr-10 md:pl-10">
-                Name here
-              </h4>
-              <h4 className="text-sm md:text-xl font-bold">36 NFT</h4>
+            <div className="flex flex-col items-center justify-center uppercase p-2 pr-4">
+              <h4 className="text-sm md:text-xl font-bold">3999 NFT</h4>
             </div>
-            <div className="flex flex-col items-center justify-center uppercase p">
-              <h4 className="text-[10px] md:text-xs font-bold pr-5 pl-5 md:pr-10 md:pl-10">
-                Name here
-              </h4>
-              <h4 className="text-sm md:text-xl font-bold">36 NFT</h4>
+            <div className="flex flex-col items-center justify-center uppercase p-2 pr-4">
+              <h4 className="text-sm md:text-xl font-bold">150 UNIQUE TRAIT</h4>
             </div>
-            <div className="flex flex-col items-center justify-center uppercase p">
-              <h4 className="text-[10px] md:text-xs font-bold pr-5 pl-5 md:pr-10 md:pl-10">
-                Name here
-              </h4>
-              <h4 className="text-sm md:text-xl font-bold">36 NFT</h4>
-            </div>
-            <div className="flex flex-col items-center justify-center uppercase p">
-              <h4 className="text-[10px] md:text-xs font-bold pr-5 pl-5 md:pr-10 md:pl-10">
-                Name here
-              </h4>
-              <h4 className="text-sm md:text-xl font-bold">36 NFT</h4>
-            </div>
-            <div className="flex flex-col items-center justify-center uppercase p">
-              <h4 className="text-[10px] md:text-xs font-bold pr-10 pl-5 md:pr-10 md:pl-10">
-                Name here
-              </h4>
-              <h4 className="text-sm md:text-xl font-bold">36 NFT</h4>
+            <div className="flex flex-col items-center justify-center uppercase p-2">
+              <h4 className="text-sm md:text-xl font-bold">10 1/1 ARTIST</h4>
             </div>
           </div>
           <div className="flex flex-row items-center justify-between w-3/4 uppercase">
@@ -67,7 +46,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-20 ">
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 token type
               </h4>
@@ -75,7 +54,7 @@ const Dashboard = () => {
                 ERC721
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 royalty fee
               </h4>
@@ -83,7 +62,7 @@ const Dashboard = () => {
                 7.5 %
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="font-bold text-center text-[10px] lg:text-xs">
                 Reveal after
               </h4>
@@ -91,7 +70,7 @@ const Dashboard = () => {
                 48 hours
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 file hosting
               </h4>

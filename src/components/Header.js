@@ -69,7 +69,7 @@ const Header = () => {
           <source src={video} type="video/mp4" />
         </video>
       </div>
-      <div className="flex flex-row items-center justify-center gap-x-3">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-x-3 gap-y-2">
         <Link
           to="mint"
           smooth={true}

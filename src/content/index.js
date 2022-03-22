@@ -14,33 +14,34 @@ export default {
       { text: "Home", to: "home", icon: images.discord },
       { text: "Roadmap", to: "roadmap", icon: images.twitter },
       { text: "Mint", to: "mint", icon: images.opensea },
-      { text: "Teamaz", to: "team", icon: images.opensea },
+      { text: "Team", to: "team", icon: images.opensea },
       { text: "FAQ", to: "faq", icon: images.opensea },
     ],
     social: [
       {
-        icon: <RiGoogleFill className="h-10 w-10 p-2 text-[#28299f]" />,
+        icon: (
+          <img
+            src={images.opensea}
+            alt="opensea"
+            className="h-10 w-10 p-2 text-[#28299f]"
+          />
+        ),
         link: "",
-        alt: "google",
-      },
-      {
-        icon: <RiFacebookFill className="h-10 w-10 p-2 text-[#28299f]" />,
-        link: "",
-        alt: "facebook",
+        alt: "opensea",
       },
       {
         icon: <RiTwitterFill className="h-10 w-10 p-2 text-[#28299f]" />,
-        link: "",
+        link: "https://twitter.com/babybossnft?s=21",
         alt: "twitter",
       },
       {
         icon: <RiInstagramLine className="h-10 w-10 p-2 text-[#28299f]" />,
-        link: "",
+        link: "https://instagram.com/babybossnft?utm_medium=copy_link",
         alt: "instagram",
       },
       {
         icon: <RiDiscordFill className="h-10 w-10 p-2 text-[#28299f]" />,
-        link: "",
+        link: "https://discord.com/invite/44pWT6fx8M",
         alt: "discord",
       },
     ],
@@ -110,15 +111,25 @@ export default {
   },
   team: [
     {
+      name: "Nick",
+      title: "Co-Founder",
+      description:
+        "A wonderer in the metaverse and been involve in the cryptocurrency space since 2016. Looking forward to make this project as a P2E to make adoption of gamers more than ever before.",
+      image: images.Nick,
+      socials: {
+        twitter: "https://twitter.com/mr_nick65",
+        instagram: "https://www.instagram.com/nikhairul/",
+      },
+    },
+    {
       name: "Aleuto72",
       title: "Founder",
       description:
         "Serve the army since his younger days and an experienced FX Trader who is well known in Malaysia. Also been in cryptocurrency space for few years already. Creating this project with a goal to bringing in more people into the NFT world and growing the community to benefit them all.",
       image: images.Aleuto,
       socials: {
-        facebook: "",
-        twitter: "",
-        instagram: "",
+        twitter: "https://twitter.com/uncletuah",
+        instagram: "https://www.instagram.com/uncletuah",
       },
     },
     {
@@ -128,21 +139,8 @@ export default {
         "An establish architect, who is now with the Nasty Builders, a graduate of Oxford Brookes University who creates all the unique traits of the Babyboss and also an advisor for few others project before.",
       image: images.Akiboi,
       socials: {
-        facebook: "",
-        twitter: "",
-        instagram: "",
-      },
-    },
-    {
-      name: "Nick",
-      title: "Co-Founder",
-      description:
-        "A wonderer in the metaverse and been involve in the cryptocurrency space since 2016. Looking forward to make this project as a P2E to make adoption of gamers more than ever before.",
-      image: images.Nick,
-      socials: {
-        facebook: "",
-        twitter: "",
-        instagram: "",
+        twitter: "https://twitter.com/akiboiii",
+        instagram: "https://www.instagram.com/akiboi.eth/",
       },
     },
   ],

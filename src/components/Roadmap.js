@@ -3,8 +3,10 @@ import React from "react";
 const Roadmap = () => {
   return (
     <div id="roadmap">
-      <div className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10">
-        <h2 className="text-5xl m-10 uppercase font-retro">ROAD MAP</h2>
+      <div className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10 mt-10 sm:mt-0">
+        <h2 className="text-5xl m-10 uppercase font-retro text-center">
+          ROAD MAP
+        </h2>
         <p className="text-center mb-4 w-5/6">
           Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
           <strong>baby NFT's</strong> who are a born on the{" "}
@@ -23,7 +25,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInRight z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4 h-full">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">**Q1 2022** </span>
@@ -35,7 +37,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInLeft z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -64,7 +66,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInRight z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -77,8 +79,8 @@ const Roadmap = () => {
             </div>
           </div>
 
-          <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 w-full ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+          <div className=" flex flex-row-reverse md:contents">
+            <div className="wow fadeInLeft z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 w-full ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">**40% SOLD**</span>
@@ -104,7 +106,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInRight z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -117,7 +119,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInLeft z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -148,7 +150,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInRight z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -162,7 +164,7 @@ const Roadmap = () => {
           </div>
 
           <div className="flex flex-row-reverse md:contents">
-            <div className="z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInLeft z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
@@ -191,7 +193,7 @@ const Roadmap = () => {
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
-            <div className="z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 w-full my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
+            <div className="wow fadeInRight z-20 col-start-7 col-end-10 lg:col-start-6 lg:col-end-9 w-full my-4 mr-auto shadow-md rounded-2xl bg-gradient-to-r p-[2px] from-[#d41efc] via-gray-400 to-teal-400">
               <div className="order-1 bg-[#28299f] h-full rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">

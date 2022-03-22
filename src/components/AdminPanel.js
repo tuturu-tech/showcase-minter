@@ -55,7 +55,7 @@ export default function AdminPanel() {
   };
 
   return (
-    <Card className="w-[500px] pb-5 h-screen overflow-scroll scrollbar scrollbar-thumb-[#d41efc] scrollbar-thin">
+    <Card className="min-w-[320px] max-w-[500px] pb-5 h-screen overflow-scroll scrollbar scrollbar-thumb-[#d41efc] scrollbar-thin">
       <p className="text-gray-200 text-center">Admin Panel</p>
       <div className="flex">
         <Input label="Reveal time" value={revealTime} />
@@ -99,7 +99,7 @@ export default function AdminPanel() {
             : "public sale"
         }
       ></Input>
-      <div className="flex">
+      <div className="flex mt-2">
         <Button
           onClick={() => {
             callContractFunction(
@@ -172,7 +172,7 @@ export default function AdminPanel() {
       <Input
         label="Base URI"
         value={baseURIInput ?? baseURI}
-        placeholder={baseURI ?? "ipfs://QYGFW../"}
+        placeholder={"ipfs://QYGFW../"}
         onChange={(event) => setBaseURIInput(event.target.value)}
         className="text-white"
       >
@@ -193,7 +193,7 @@ export default function AdminPanel() {
       <Input
         label="Unrevealed URI"
         value={unrevealedURIInput ?? unrevealedURI}
-        placeholder={unrevealedURI ?? "ipfs://QYGFW../"}
+        placeholder={"ipfs://QYGFW../"}
         onChange={(event) => setUnrevealedURIInput(event.target.value)}
         className="text-white"
       >
@@ -214,11 +214,13 @@ export default function AdminPanel() {
       <div className="flex items-center">
         <Input
           label="Address"
+          placeholder={"0x000..."}
           value={airdropAddress}
           onChange={(event) => setAirdropAddress(event.target.value)}
         />
         <Input
           label="Amount"
+          placeholder={"Number"}
           value={airdropAmount}
           onChange={(event) => setAirdropAmount(event.target.value)}
         />
@@ -239,6 +241,7 @@ export default function AdminPanel() {
 
       <Input
         label="Max mint"
+        placeholder={"Number"}
         value={maxMintInput}
         onChange={(event) => setMaxMintInput(event.target.value)}
       >
@@ -258,6 +261,7 @@ export default function AdminPanel() {
       </Input>
       <Input
         label="Reveal time"
+        placeholder="UNIX timestamp"
         value={revealTimeInput}
         onChange={(event) => setRevealTimeInput(event.target.value)}
       >
@@ -277,6 +281,7 @@ export default function AdminPanel() {
       </Input>
       <Input
         label="Withdrawal address"
+        placeholder={"0x000..."}
         value={withdrawalAddressInput}
         onChange={(event) => setWithdrawalAddressInput(event.target.value)}
       >
@@ -296,6 +301,7 @@ export default function AdminPanel() {
       </Input>
       <Input
         label="Price PS"
+        placeholder={"In ETH"}
         value={pricePSInput}
         onChange={(event) => setPricePSInput(event.target.value)}
       >
@@ -315,6 +321,7 @@ export default function AdminPanel() {
       </Input>
       <Input
         label="Price Genesis"
+        placeholder={"In ETH"}
         value={priceGenesisInput}
         onChange={(event) => setPriceGenesisInput(event.target.value)}
       >
@@ -334,6 +341,7 @@ export default function AdminPanel() {
       </Input>
       <Input
         label="Price WL"
+        placeholder={"In ETH"}
         value={priceWLInput}
         onChange={(event) => setPriceWLInput(event.target.value)}
       >

@@ -9,7 +9,7 @@ const FAQ = () => {
       id="faq"
       className="flex flex-col h-fit w-10/12 items-center mx-auto mb-10 mt-20"
     >
-      <h2 className="text-4xl m-10">{content.faq.title}</h2>
+      <h2 className="text-4xl m-10 text-center">{content.faq.title}</h2>
       <p className="text-center mb-10 text-sm w-4/6">
         {content.faq.description}
       </p>
