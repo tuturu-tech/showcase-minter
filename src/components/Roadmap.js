@@ -79,11 +79,13 @@ const Roadmap = () => {
             </div>
           </div>
 
-          <div className=" flex flex-row-reverse md:contents">
+          <div className="flex flex-row-reverse md:contents">
             <div className="wow fadeInLeft z-20 col-start-1 col-end-4 lg:col-start-2 lg:col-end-5 p-[2px] my-4 w-full ml-auto shadow-md rounded-2xl bg-gradient-to-r from-[#d41efc] via-gray-400 to-teal-400">
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
-                  <span className="font-bold text-[#d41efc]">**40% SOLD**</span>
+                  <span className="font-bold text-[#d41efc]">
+                    **40% SOLD**{" "}
+                  </span>
                   Collaboration with other NFT project
                 </p>
               </div>
