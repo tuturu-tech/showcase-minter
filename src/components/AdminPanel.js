@@ -22,6 +22,7 @@ export default function AdminPanel() {
   const [priceGenesisInput, setPriceGenesisInput] = useState();
   const [airdropAddress, setAirdropAddress] = useState();
   const [airdropAmount, setAirdropAmount] = useState();
+  const [ownerInput, setOwnerInput] = useState();
 
   const [
     {
@@ -355,6 +356,26 @@ export default function AdminPanel() {
           }}
           className="text-white bg-[#1e50ff] hover:ring-1 ring-white text-sm mx-2"
           disabled={!signer || !priceWLInput}
+        >
+          Set
+        </Button>
+      </Input>
+      <Input
+        label="Transfer ownership"
+        placeholder={"0x000..."}
+        value={ownerInput}
+        onChange={(event) => setOwnerInput(event.target.value)}
+      >
+        <Button
+          onClick={() => {
+            callContractFunction(
+              erc721.connect(signer).transferOwnership,
+              [ownerInput],
+              updateMintState
+            );
+          }}
+          className="text-white bg-[#1e50ff] hover:ring-1 ring-white text-sm mx-2"
+          disabled={!signer || !ownerInput}
         >
           Set
         </Button>
