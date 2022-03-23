@@ -1,4 +1,5 @@
 import React from "react";
+import { images } from "../constants";
 
 const Roadmap = () => {
   return (
@@ -21,7 +22,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 mt-44 lg:mt-32 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14"
+                />
+              </div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
@@ -52,7 +59,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className=" h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
@@ -62,7 +75,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
@@ -94,7 +113,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
@@ -104,7 +129,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
@@ -138,7 +169,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full z-10 w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
@@ -148,7 +185,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 
@@ -181,7 +224,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full w-1 z-10 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 z-10 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[200px] lg:w-[300px] translate-x-1 md:translate-x-[-100%] z-0 absolute top-1/2 bg-teal-400 pointer-events-none"></div>
             </div>
           </div>
@@ -191,7 +240,13 @@ const Roadmap = () => {
               <div className="h-full w-6 flex items-center justify-center">
                 <div className="h-full mb-36 lg:mb-32 w-1 bg-[#d41efc] pointer-events-none"></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#d41efc] shadow"></div>
+              <div className="w-14 h-14 absolute top-1/2 mt-[-26px] -ml-4 z-20">
+                <img
+                  src={images.rb}
+                  alt="roadmap bullet"
+                  className="w-14 h-14 z-20"
+                />
+              </div>
               <div className="h-1 w-[300px] z-0 absolute top-1/2 bg-[#d41efc] pointer-events-none"></div>
             </div>
 

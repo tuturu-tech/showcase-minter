@@ -14,6 +14,7 @@ import mint from "../assets/images/mint.png";
 import Aleuto from "../assets/images/Aleuto.jpg";
 import Akiboi from "../assets/images/Akiboi.jpg";
 import Nick from "../assets/images/Nick.jpg";
+import rb from "../assets/logos/rb.svg";
 
 export default {
   walletlink,
@@ -32,4 +33,5 @@ export default {
   Aleuto,
   Akiboi,
   Nick,
+  rb,
 };
