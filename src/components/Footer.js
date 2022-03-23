@@ -29,7 +29,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-[10px] text-center mx-2">
+      <h2 className="uppercase text-sm font-bold ml-2">DISCLAIMER</h2>
+      <p className="text-[10px] text-left mx-2">
         Nothing here is investment advice. NFTs do not necessarily have any
         intrinsic value. They also might be illiquid. If you buy an NFT, you are
         not necessarily going to be able to sell it for much later, or gain any

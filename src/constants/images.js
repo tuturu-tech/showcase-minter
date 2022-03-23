@@ -15,6 +15,7 @@ import Aleuto from "../assets/images/Aleuto.jpg";
 import Akiboi from "../assets/images/Akiboi.jpg";
 import Nick from "../assets/images/Nick.jpg";
 import rb from "../assets/logos/rb.svg";
+import bbheader from "../assets/logos/bbheader.jpeg";
 
 export default {
   walletlink,
@@ -34,4 +35,5 @@ export default {
   Akiboi,
   Nick,
   rb,
+  bbheader,
 };

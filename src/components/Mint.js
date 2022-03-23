@@ -96,7 +96,7 @@ const Mint = () => {
           {pricePS ? ethers.utils.formatEther(pricePS) + " ETH" : "loading..."}
         </p>
         <p className="text-center md:text-left">
-          Welcome to BabyBoss exclusive clud.
+          Welcome to BabyBoss exclusive club.
           <br />
           Join the revolution by purchasing one of your own!
         </p>

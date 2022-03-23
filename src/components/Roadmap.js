@@ -8,11 +8,11 @@ const Roadmap = () => {
         <h2 className="text-5xl m-10 uppercase font-retro text-center">
           ROAD MAP
         </h2>
-        <p className="text-center mb-4 w-5/6">
+        {/* <p className="text-center mb-4 w-5/6">
           Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
           <strong>baby NFT's</strong> who are a born on the{" "}
           <strong>Ethereum blockchain.</strong>
-        </p>
+        </p> */}
       </div>
 
       <div className="container mx-auto">
