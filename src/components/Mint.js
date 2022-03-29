@@ -42,7 +42,7 @@ const Mint = () => {
   );
 
   useEffect(() => {
-    if (provider !== undefined && price) {
+    if (provider !== undefined && pricePS) {
       erc721.on(filter, async () => {
         await updateMintState();
       });
