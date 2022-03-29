@@ -55,7 +55,7 @@ export default {
         title: "How much Babyboss NFT cost ?",
         description: (
           <p>
-            Theres gonna be 3 tier of price for the NFT
+            There is going to be 3 tiers of price for the NFT
             <br />
             - S3L minting for the S3L holders at 0.055 + gas <br /> - Presale
             minting for the Whitelister and OG at 0.066 eth + gas
@@ -66,7 +66,7 @@ export default {
       {
         title: "How much I need to pay to mint Babyboss ?",
         description:
-          "The gas fee are extremely volatile and can be vary depending on the time of the day. S3L holders will have 48 hours, Whitelister and OG will have 24 hours to mint their Babyboss. This way, you can monitor the gas fee and choose to mint when its most optimal.",
+          "The gas fee is extremely volatile and can vary depending on the time of the day. S3L holders will have 48 hours, Whitelister and OG will have 24 hours to mint their Babyboss. This way, you can monitor the gas fee and choose to mint when its most optimal.",
       },
       {
         title: "How many Babyboss I can mint per wallet ?",
@@ -77,10 +77,10 @@ export default {
         title: "When will Babyboss launch ?",
         description: (
           <p>
-            - S3l Holders minting will go live on 25 march <br />
-            - Presale minting will go live on 27 march
+            - S3l Holders minting will go live on 9th April <br />
+            - Presale minting will go live on 11th April
             <br />
-            - Public sale will go live on 28 march
+            - Public sale will go live on 12th April
             <br />
           </p>
         ),
@@ -100,6 +100,14 @@ export default {
             <br />
             We want to represent a healthy and positive vibes community and
             built a long lasting presence in the metaverse.
+          </p>
+        ),
+      },
+      {
+        title: "Where can I get more info about BabyBoss ?",
+        description: (
+          <p>
+            Join our social media. Discord, Twitter, & Instagram. Let's connect!
           </p>
         ),
       },
@@ -143,34 +151,25 @@ export default {
       name: "Karim",
       title: "Tech Dev",
       description:
-        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+        "Learning, experimenting and building in the web3 world. Excited to be a part of the web3 movement and evolution!",
       image: images.karim,
-      socials: {
-        twitter: "https://twitter.com/akiboiii",
-        instagram: "https://www.instagram.com/akiboi.eth/",
-      },
+      socials: null,
     },
     {
       name: "Slushy",
       title: "Marketing",
       description:
-        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+        "Responsible for networking and building the community to create a better brand awareness. Spent most of his times looking for new ways to market the project.",
       image: images.slushy,
-      socials: {
-        twitter: "https://twitter.com/akiboiii",
-        instagram: "https://www.instagram.com/akiboi.eth/",
-      },
+      socials: null,
     },
     {
       name: "Danish",
       title: "Community Manager",
       description:
-        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+        "A knowledgeable person despite his age and is the person you would want to reach out if you have any questions about the community. Oh ya, and he is a true degen!",
       image: images.danish,
-      socials: {
-        twitter: "https://twitter.com/akiboiii",
-        instagram: "https://www.instagram.com/akiboi.eth/",
-      },
+      socials: null,
     },
   ],
 };

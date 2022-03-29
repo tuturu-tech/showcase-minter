@@ -1,4 +1,8 @@
 import { useChainQuery, useContracts } from "../hooks";
+import { genesisLimit } from "../data/genesisLimit";
+import { genesisSig } from "../data/genesisSignatures";
+import { whitelistLimit } from "../data/presaleLimit";
+import { whitelistSig } from "../data/presaleSignatures";
 
 import { usePriorityAccount } from "../lib/connectors";
 
@@ -17,6 +21,13 @@ export function useMintQuery() {
     const priceGenesis = await erc721.priceGenesis();
     const maxMint = await erc721.maxMint();
 
+    const wlSig = whitelistSig[account?.toLowerCase()];
+    const wlLimit = whitelistLimit[account?.toLowerCase()];
+    const isWhitelisted = wlSig && wlLimit;
+    const gSig = genesisSig[account?.toLowerCase()];
+    const gLimit = genesisLimit[account?.toLowerCase()];
+    const isGenesis = gSig && gLimit;
+
     const saleState = await erc721.saleState();
 
     const isContractOwner =
@@ -32,6 +43,12 @@ export function useMintQuery() {
       totalSupply,
       isContractOwner,
       maxMint,
+      wlSig,
+      wlLimit,
+      isWhitelisted,
+      gSig,
+      gLimit,
+      isGenesis,
     };
   };
   return useChainQuery({ key, fetchState });

@@ -25,6 +25,12 @@ const Mint = () => {
       totalSupply,
       isContractOwner,
       maxMint,
+      wlSig,
+      wlLimit,
+      isWhitelisted,
+      gSig,
+      gLimit,
+      isGenesis,
     },
     updateMintState,
   ] = useMintQuery();
@@ -67,7 +73,7 @@ const Mint = () => {
     setIsMinting(true);
     erc721
       .connect(signer)
-      .whitelistMint(amount, { value: priceWL.mul(amount) })
+      .whitelistMint(wlSig, amount, wlLimit, { value: priceWL.mul(amount) })
       .then(handleTx)
       .then(startParty)
       .then(updateMintState)
@@ -81,7 +87,7 @@ const Mint = () => {
     setIsMinting(true);
     erc721
       .connect(signer)
-      .genesisMint(amount, { value: priceGenesis.mul(amount) })
+      .genesisMint(gSig, amount, gLimit, { value: priceGenesis.mul(amount) })
       .then(handleTx)
       .then(startParty)
       .then(updateMintState)
@@ -103,9 +109,9 @@ const Mint = () => {
       />
       {signer && (
         <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-">
-          <h2 className="uppercase text-4xl mb-4">MINT A BABY</h2>
+          <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 
-          <p className="mb-4">
+          <p className="mb-4 text-center">
             {totalSupply ? totalSupply?.toString() : "loading..."}/
             {maxSupply ? maxSupply.toString() : "loading..."} Minted at each{" "}
             {pricePS
@@ -117,49 +123,83 @@ const Mint = () => {
             <br />
             Join the revolution by purchasing one of your own!
           </p>
-          <div className="flex flex-row items-center mt-10">
-            <button
-              className="bg-[#d41efc] rounded-full w-7 h-7 mr-2 hover:ring-2 ring-white"
-              onClick={() => {
-                setAmount((prevAmount) => {
-                  if (prevAmount > 1) {
-                    return prevAmount - 1;
-                  } else {
-                    return prevAmount;
+          <div className="flex flex-col md:flex-row items-center mt-10">
+            <div className="flex flex-row items-center mb-4 md:mb-0">
+              <button
+                className="bg-[#d41efc] rounded-full w-7 h-7 mr-2 hover:ring-2 ring-white"
+                onClick={() => {
+                  setAmount((prevAmount) => {
+                    if (prevAmount > 1) {
+                      return prevAmount - 1;
+                    } else {
+                      return prevAmount;
+                    }
+                  });
+                }}
+              >
+                -
+              </button>
+              <input
+                type="text"
+                value={amount}
+                readOnly
+                className="rounded-full max-w-[60px] bg-transparent mr-2 text-center"
+              />
+              <button
+                className="bg-[#d41efc] rounded-full w-7 h-7 mr-2 hover:ring-2 ring-white"
+                onClick={() => {
+                  setAmount((prevAmount) => {
+                    if (prevAmount < 10) {
+                      return prevAmount + 1;
+                    } else {
+                      return prevAmount;
+                    }
+                  });
+                }}
+              >
+                +
+              </button>
+            </div>
+
+            {isWhitelisted && saleState === 2 ? (
+              <div className="flex flex-col md:flex-row items-center justify-center gap-y-2 md:gap-x-2">
+                <LoadingButton
+                  loading={isMinting}
+                  disabled={!signer || isMinting || isSoldOut}
+                  className="bg-[#d41efc] rounded-full w-52 p-2 hover:ring-2 ring-white"
+                  onClick={WLMint}
+                >
+                  Whitelist mint
+                </LoadingButton>
+                <p>Mint limit: {wlLimit ? wlLimit : "0"}</p>
+              </div>
+            ) : isGenesis && saleState === 1 ? (
+              <div className="flex flex-col md:flex-row items-center gap-y-2 md:gap-x-2">
+                <LoadingButton
+                  loading={isMinting}
+                  disabled={!signer || isMinting || isSoldOut}
+                  className="bg-[#d41efc] rounded-full w-52 p-2 hover:ring-2 ring-white"
+                  onClick={genesisMint}
+                >
+                  Genesis mint
+                </LoadingButton>
+                <p>Mint limit: {gLimit ? gLimit : "0"}</p>
+              </div>
+            ) : (
+              <div className="flex flex-col md:flex-row items-center gap-y-2 md:gap-x-2">
+                <LoadingButton
+                  loading={isMinting}
+                  disabled={
+                    !signer || isMinting || isSoldOut || saleState !== 3
                   }
-                });
-              }}
-            >
-              -
-            </button>
-            <input
-              type="text"
-              value={amount}
-              readOnly
-              className="rounded-full max-w-[60px] bg-transparent mr-2 text-center"
-            />
-            <button
-              className="bg-[#d41efc] rounded-full w-7 h-7 mr-2 hover:ring-2 ring-white"
-              onClick={() => {
-                setAmount((prevAmount) => {
-                  if (prevAmount < 10) {
-                    return prevAmount + 1;
-                  } else {
-                    return prevAmount;
-                  }
-                });
-              }}
-            >
-              +
-            </button>
-            <LoadingButton
-              loading={isMinting}
-              disabled={!signer || isMinting || isSoldOut}
-              className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white"
-              onClick={onMintHandler}
-            >
-              Mint A Baby
-            </LoadingButton>
+                  className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white"
+                  onClick={onMintHandler}
+                >
+                  {saleState === 3 ? "Mint A Baby" : "Mint not live"}
+                </LoadingButton>
+                <p>Mint limit: {maxMint ? Number(maxMint) : "0"}</p>
+              </div>
+            )}
           </div>
         </div>
       )}
