@@ -110,7 +110,7 @@ export default {
       name: "Aleuto72",
       title: "Founder",
       description:
-        "Serve the army since his younger days and is an experienced FX Trader who is well known in Malaysia. Also been in the cryptocurrency space for a few years. Creating this project with a goal to bring in more people into the NFT world and grow the community to benefit them all.",
+        "An experienced Trader who is well known in Malaysia and serve the army since his younger days. Also have been involved in cryptocurrency space for few years already. Currently one of the stongest & biggest supporter in PENTAS NFT platform. Creating this project with a goal to bring in more people into the NFT world and growing the community to benefit them all.",
       image: images.Aleuto,
       socials: {
         twitter: "https://twitter.com/uncletuah",
@@ -119,7 +119,7 @@ export default {
     },
     {
       name: "Nick",
-      title: "Co-Founder",
+      title: "Team Leader",
       description:
         "A wanderer in the metaverse and has been involved in the cryptocurrency space since 2016. Looking forward to making this project as a P2E to make the adoption of gamers more than ever before.",
       image: images.Nick,
@@ -130,10 +130,43 @@ export default {
     },
     {
       name: "Akiboi",
-      title: "Co-Founder/Lead Artist",
+      title: "Lead Artist",
       description:
         "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
       image: images.Akiboi,
+      socials: {
+        twitter: "https://twitter.com/akiboiii",
+        instagram: "https://www.instagram.com/akiboi.eth/",
+      },
+    },
+    {
+      name: "Karim",
+      title: "Tech Dev",
+      description:
+        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+      image: images.karim,
+      socials: {
+        twitter: "https://twitter.com/akiboiii",
+        instagram: "https://www.instagram.com/akiboi.eth/",
+      },
+    },
+    {
+      name: "Slushy",
+      title: "Marketing",
+      description:
+        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+      image: images.slushy,
+      socials: {
+        twitter: "https://twitter.com/akiboiii",
+        instagram: "https://www.instagram.com/akiboi.eth/",
+      },
+    },
+    {
+      name: "Danish",
+      title: "Community Manager",
+      description:
+        "An established architect, who is now with the Nasty Builders, a graduate from Oxford Brookes University who creates all the unique traits of the BabyBoss NFT, and also an advisor for a few other projects before.",
+      image: images.danish,
       socials: {
         twitter: "https://twitter.com/akiboiii",
         instagram: "https://www.instagram.com/akiboi.eth/",

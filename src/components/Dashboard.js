@@ -13,7 +13,7 @@ const Dashboard = () => {
               <h4 className="text-sm md:text-xl font-bold">3999 NFT</h4>
             </div>
             <div className="flex flex-col items-center justify-center uppercase p-2 pr-4">
-              <h4 className="text-sm md:text-xl font-bold">150 UNIQUE TRAIT</h4>
+              <h4 className="text-sm md:text-xl font-bold">113 UNIQUE TRAIT</h4>
             </div>
             <div className="flex flex-col items-center justify-center uppercase p-2">
               <h4 className="text-sm md:text-xl font-bold">10 1/1 ARTIST</h4>

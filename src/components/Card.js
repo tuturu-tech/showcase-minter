@@ -1,6 +1,5 @@
 import React from "react";
-import { images } from "../constants";
-import { RiFacebookFill, RiTwitterFill, RiInstagramLine } from "react-icons/ri";
+import { RiTwitterFill, RiInstagramLine } from "react-icons/ri";
 
 const Card = ({ image, alt, name, title, description, socials, hover }) => {
   return (
@@ -9,7 +8,7 @@ const Card = ({ image, alt, name, title, description, socials, hover }) => {
       <div className="relative flex flex-col items-center flex-1 bg-white rounded-2xl p-5 h-full group-hover:scale-105">
         <img src={image} alt={alt} className="rounded-2xl mb-2" />
         <h2 className="text-black font-bold mb-2 text-xl ">{name}</h2>
-        <h2 className="text-purple-500 font-bold mb-2">{title}</h2>
+        <h2 className="text-purple-500 font-bold mb-2 text-center">{title}</h2>
         <p className="text-blue-900 mb-6 text-center">{description}</p>
         <div className="absolute flex flex-row gap-x-2 items-center bottom-0 mb-4">
           <a

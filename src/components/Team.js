@@ -12,7 +12,7 @@ const Team = () => {
       {/* <p className="text-center mb-10 text-sm w-4/6">
         {content.faq.description}
       </p> */}
-      <div className="grid grid-cols-1 gap-y-5 md:grid-cols-3 gap-x-5">
+      <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3 gap-x-5">
         {content.team.map((item, index) => (
           <Card
             key={index}

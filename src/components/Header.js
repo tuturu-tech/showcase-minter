@@ -25,10 +25,7 @@ const Header = () => {
         <img src={images.header2} alt="Baby boss header" className="" />
       </div>
 
-      <h2 className="text-4xl md:text-5xl m-10 uppercase font-retro">
-        DESCRIPTION
-      </h2>
-      <p className="text-center mb-4 w-5/6 text-xs md:text-sm">
+      <p className="text-center mb-4 w-5/6 text-xs md:text-sm mt-10">
         Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
         <strong>baby NFT's</strong> who are a born on the{" "}
         <strong>Ethereum blockchain.</strong>

@@ -14,6 +14,9 @@ import mint from "../assets/images/mint.png";
 import Aleuto from "../assets/images/Aleuto.jpg";
 import Akiboi from "../assets/images/Akiboi.jpg";
 import Nick from "../assets/images/Nick.jpg";
+import karim from "../assets/images/karim.jpeg";
+import slushy from "../assets/images/slushy.jpeg";
+import danish from "../assets/images/danish.jpeg";
 import rb from "../assets/logos/rb.svg";
 import bbheader from "../assets/logos/bbheader.jpeg";
 
@@ -36,4 +39,7 @@ export default {
   Nick,
   rb,
   bbheader,
+  karim,
+  slushy,
+  danish,
 };

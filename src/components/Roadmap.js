@@ -6,13 +6,8 @@ const Roadmap = () => {
     <div id="roadmap">
       <div className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10 mt-10 sm:mt-0">
         <h2 className="text-5xl m-10 uppercase font-retro text-center">
-          ROAD MAP
+          ROADMAP 1.0
         </h2>
-        {/* <p className="text-center mb-4 w-5/6">
-          Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
-          <strong>baby NFT's</strong> who are a born on the{" "}
-          <strong>Ethereum blockchain.</strong>
-        </p> */}
       </div>
 
       <div className="container mx-auto">
@@ -89,10 +84,9 @@ const Roadmap = () => {
               <div className="order-1 bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
-                    **50% SOLD**{" "}
+                    **40% SOLD**{" "}
                   </span>
-                  Airdrop Baby Boss to holder S3L NFT (id 1-100) and OG S3L Club
-                  role
+                  Collaboration with other NFT project
                 </p>
               </div>
             </div>
@@ -103,9 +97,10 @@ const Roadmap = () => {
               <div className="bg-[#28299f] rounded-2xl shadow-xl px-6 py-4">
                 <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
                   <span className="font-bold text-[#d41efc]">
-                    **40% SOLD**{" "}
+                    **50% SOLD**{" "}
                   </span>
-                  Collaboration with other NFT project
+                  Airdrop Baby Boss to holder S3L NFT (id 1-100) and OG S3L Club
+                  role
                 </p>
               </div>
             </div>

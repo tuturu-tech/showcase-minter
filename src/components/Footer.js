@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "react-scroll/modules/components/Link";
 import content from "../content";
 
 const Footer = () => {
@@ -9,9 +10,14 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row h-full items-center justify-center">
           <div className="flex flex-row mr-0 md:mr-10">
             {content.nav.links.map((item, index) => (
-              <p key={index} className="p-2 sm:p-3 text-sm">
+              <Link
+                key={index}
+                to={item.to}
+                smooth={true}
+                className="p-2 sm:p-3 text-sm cursor-pointer hover:scale-110"
+              >
                 {item.text}
-              </p>
+              </Link>
             ))}
           </div>
           <div className="flex flex-row">
@@ -21,7 +27,7 @@ const Footer = () => {
                 href={item.link}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full bg-white mr-2 w-8 h-8 flex items-center justify-center"
+                className="rounded-full bg-white mr-2 w-8 h-8 flex items-center justify-center hover:ring-1 ring-white"
               >
                 {item.icon}
               </a>
