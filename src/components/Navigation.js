@@ -28,12 +28,12 @@ const Navigation = () => {
   return (
     <div className="relative z-10 top-0 right-0 bg-transparent h-28 pt-2">
       <div className="flex flex-row justify-between items-center w-10/12 h-full mx-auto text-white">
-        <p className="font-bold text-lg">Baby Boss</p>
-        {/* <img
-          src={images.bbheader}
+        {/* <p className="font-logo font-bold text-lg">Baby Boss</p> */}
+        <img
+          src={images.babybossf}
           alt="baby boss logo"
-          className="h-28 w-fit"
-        /> */}
+          className="h-24 w-fit"
+        />
         <button
           className="flex md:hidden w-10 h-10 items-center justify-center"
           onClick={toggleMenu}

@@ -1,12 +1,18 @@
 import React from "react";
 import Link from "react-scroll/modules/components/Link";
 import content from "../content";
+import { images } from "../constants";
 
 const Footer = () => {
   return (
     <div className="relative z-10 flex flex-col bg-[#25279e] h-fit pt-2 pb-10 overflow-hidden sm:overflow-visible">
       <div className="flex flex-col md:flex-row justify-between items-center w-10/12 h-full mx-auto text-white mb-5">
-        <p className="font-bold">Baby Boss</p>
+        {/* <p className="font-bold font-04b">Baby Boss</p> */}
+        <img
+          src={images.babyboss}
+          alt="baby boss logo"
+          className="h-24 w-fit"
+        />
         <div className="flex flex-col md:flex-row h-full items-center justify-center">
           <div className="flex flex-row mr-0 md:mr-10">
             {content.nav.links.map((item, index) => (

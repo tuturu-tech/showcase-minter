@@ -24,7 +24,7 @@ function App() {
     <RecoilRoot>
       <TransactionContextProvider>
         <ConfettiProvider>
-          <div className="font-helveticaNeueLight bg-background bg-cover bg-no-repeat text-white font-retro">
+          <div className="bg-background bg-cover bg-no-repeat text-white font-retro">
             <Navigation />
             <Header />
             <Mint />

@@ -108,7 +108,7 @@ const Mint = () => {
         className="lg:ml-10 flex-1 w-1/2 lg:w-full"
       />
       {signer && (
-        <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-">
+        <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 
           <p className="mb-4 text-center">
@@ -204,7 +204,7 @@ const Mint = () => {
         </div>
       )}
       {!signer && (
-        <div className="flex flex-col flex-1 items-center justify-center">
+        <div className="flex flex-col flex-1 items-center justify-center mb-20 md:mb-0">
           <WalletButton className="uppercase p-2 w-50 pt-3 pb-3 pr-6 pl-6 bg-[#1e50ff] rounded-full text-sm hover:ring-2 ring-white text-white">
             Connect Wallet
           </WalletButton>

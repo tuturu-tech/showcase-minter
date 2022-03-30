@@ -19,6 +19,8 @@ import slushy from "../assets/images/slushy.jpeg";
 import danish from "../assets/images/danish.jpeg";
 import rb from "../assets/logos/rb.svg";
 import bbheader from "../assets/logos/bbheader.jpeg";
+import babyboss from "../assets/logos/babyboss.png";
+import babybossf from "../assets/logos/babybossf.png";
 
 export default {
   walletlink,
@@ -42,4 +44,6 @@ export default {
   karim,
   slushy,
   danish,
+  babyboss,
+  babybossf,
 };

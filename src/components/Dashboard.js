@@ -33,7 +33,7 @@ const Dashboard = () => {
                 mint price
               </h4>
               <h4 className="text-xs md:text-[16px] font-bold text-center">
-                0,000
+                0.055 ETH to 0.077 ETH
               </h4>
             </div>
             <div className="flex flex-col items-center justify-center gap-y-3">
@@ -41,7 +41,7 @@ const Dashboard = () => {
                 date of release
               </h4>
               <h4 className="text-xs md:text-[16px] font-bold text-center">
-                0,000
+                9th - 12th of April
               </h4>
             </div>
           </div>
