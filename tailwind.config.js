@@ -20,6 +20,9 @@ module.exports = {
         "screen/4": "calc(100vh / 4)",
         "screen/5": "calc(100vh / 5)",
       }),
+      screens: {
+        500: "500px",
+      },
       backgroundSize: {
         "size-200": "200% 200%",
         "size-100": "100% 100%",
@@ -43,6 +46,7 @@ module.exports = {
       },
       fontFamily: {
         retro: ["Retro Gaming"],
+        "04b": ['"04b-30"'],
       },
       animation: {
         none: "none",

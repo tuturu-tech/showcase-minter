@@ -52,29 +52,29 @@ export default {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
     bullets: [
       {
-        title: "How much Babyboss NFT cost ?",
+        title: "How much is the cost to mint Babyboss?",
         description: (
           <p>
             There is going to be 3 tiers of price for the NFT
             <br />
             - S3L minting for the S3L holders at 0.055 + gas <br /> - Presale
             minting for the Whitelister and OG at 0.066 eth + gas
-            <br />- Public minting for anyone at 0.077 eth + gas
+            <br />- Public minting for anyone at 0.088 eth + gas
           </p>
         ),
       },
       {
-        title: "How much I need to pay to mint Babyboss ?",
+        title: "How much gas is needed to mint Babyboss?",
         description:
-          "The gas fee is extremely volatile and can vary depending on the time of the day. S3L holders will have 48 hours, Whitelister and OG will have 24 hours to mint their Babyboss. This way, you can monitor the gas fee and choose to mint when its most optimal.",
+          "The gas fee is extremely volatile and can be vary depending on the time of theday. S3L holders will have 48 hours, Whitelister and OG will have 24 hours to mint their Babyboss. This way, you can monitor the gas fee and choose to mint when its most optimal.",
       },
       {
-        title: "How many Babyboss I can mint per wallet ?",
+        title: "How many Babyboss can I mint per wallet?",
         description:
-          "During presale, you will able to mint according to how many S3L NFT you are holding. During the public sales, you will able to mint max 2 Babyboss per wallet.",
+          "During presale, you will able to mint according to how many S3L NFT you owned. During the public sale, you will able to mint max 2 Babyboss per wallet.",
       },
       {
-        title: "When will Babyboss launch ?",
+        title: "When will Babyboss launch?",
         description: (
           <p>
             - S3l Holders minting will go live on 9th April <br />
@@ -86,20 +86,20 @@ export default {
         ),
       },
       {
-        title: "What is Babyboss ?",
+        title: "What is Babyboss?",
         description: (
           <p>
-            Baby Boss S3L Club, is a collections of 3999 super adorable
-            pixelated baby NFT's who are a born on the Ethereum blockchain.
+            Baby Boss S3L Club, is a collection of 3999 super adorable pixelated
+            baby NFT’s that were born on the Ethereum blockchain.
             <br />
             <br />
             Own, play, earn and connect with the community from all over the
             world where we envision to create a place without a boundless
-            communication regardless of our differences.
+            communication regardless ofour differences.
             <br />
             <br />
             We want to represent a healthy and positive vibes community and
-            built a long lasting presence in the metaverse.
+            built a longlasting presence in the metaverse.
           </p>
         ),
       },
@@ -107,7 +107,34 @@ export default {
         title: "Where can I get more info about BabyBoss ?",
         description: (
           <p>
-            Join our social media. Discord, Twitter, & Instagram. Let's connect!
+            Join our social media.{" "}
+            <a
+              href="https://discord.com/invite/44pWT6fx8M"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Discord
+            </a>
+            ,{" "}
+            <a
+              href="https://twitter.com/babybossnft?s=21"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Twitter
+            </a>
+            , &{" "}
+            <a
+              href="https://instagram.com/babybossnft?utm_medium=copy_link"
+              target="_blank"
+              rel="noreferrer"
+              className="underline"
+            >
+              Instagram
+            </a>
+            . Let's connect!
           </p>
         ),
       },
@@ -159,7 +186,7 @@ export default {
       name: "Slushy",
       title: "Marketing",
       description:
-        "Responsible for networking and building the community to create a better brand awareness. Spent most of his times looking for new ways to market the project.",
+        "I've been on discord for 6 years, love communicating and networking with other communities and influencers to help with marketing.",
       image: images.slushy,
       socials: null,
     },
@@ -167,7 +194,7 @@ export default {
       name: "Danish",
       title: "Community Manager",
       description:
-        "A knowledgeable person despite his age and is the person you would want to reach out if you have any questions about the community. Oh ya, and he is a true degen!",
+        "NFTs lover, gamer and love music. Love to interact with people and help the community. Involve with a few project to moderate and marketing",
       image: images.danish,
       socials: null,
     },

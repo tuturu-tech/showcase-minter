@@ -22,12 +22,17 @@ const Header = () => {
     >
       <div className="flex flex-col items-center w-3/4 mx-auto">
         <img src={images.header1} alt="Baby boss header" className=" mt-10" />
-        <img src={images.header2} alt="Baby boss header" className="" />
+        {/* <img src={images.header2} alt="Baby boss header" className="" /> */}
+        <div className="border-[1px] border-white w-full"></div>
+        <h2 className="font-04b text-4xl 500:text-5xl md:text-7xl xl:text-8xl mt-6 mb-6">
+          BabyBoss
+        </h2>
+        <div className="border-[1px] border-white w-full"></div>
       </div>
 
       <p className="text-center mb-4 w-5/6 text-xs md:text-sm mt-10">
         Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
-        <strong>baby NFT's</strong> who are a born on the{" "}
+        <strong>baby NFT's</strong> that were born on the{" "}
         <strong>Ethereum blockchain.</strong>
       </p>
       <p className="text-center mb-4 w-5/6 text-xs md:text-sm">

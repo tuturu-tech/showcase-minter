@@ -9,6 +9,13 @@
   src: local("Retro Gaming"), url("./fonts/Retro Gaming.woff") format("woff");
 }
 
+@font-face {
+  font-family: "04b-30";
+  src: url("./fonts/04b-30.ttf.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .animate__animated {
   --animate-duration: 0.2s;
 }
