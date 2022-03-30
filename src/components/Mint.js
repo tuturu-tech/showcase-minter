@@ -107,11 +107,23 @@ const Mint = () => {
         alt="mint"
         className="lg:ml-10 flex-1 w-1/2 lg:w-full"
       />
-      {signer && (
+      {signer && !saleState && (
+        <div className="flex flex-col items-center flex-1 mb-20 md:mb-0">
+          <LoadingButton
+            loading={isMinting}
+            disabled={!signer || isMinting || isSoldOut || saleState !== 3}
+            className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white"
+            onClick={onMintHandler}
+          >
+            {saleState === 3 ? "Mint A Baby" : "Mint not live"}
+          </LoadingButton>
+        </div>
+      )}
+      {signer && saleState && (
         <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 
-          <p className="mb-4 text-center">
+          <p className="mb-4 text-center md:text-left">
             {totalSupply ? totalSupply?.toString() : "loading..."}/
             {maxSupply ? maxSupply.toString() : "loading..."} Minted at each{" "}
             {pricePS
