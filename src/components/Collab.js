@@ -12,7 +12,7 @@ const Collab = () => {
         {content.collab.map((item, index) => (
           <a
             key={index}
-            href=""
+            href={item.link}
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center hover:ring-1 ring-white rounded-lg"
