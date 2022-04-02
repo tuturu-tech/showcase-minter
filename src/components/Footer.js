@@ -5,7 +5,7 @@ import { images } from "../constants";
 
 const Footer = () => {
   return (
-    <div className="relative z-10 flex flex-col bg-[#25279e] h-fit pt-2 pb-10 overflow-hidden sm:overflow-visible">
+    <div className="relative z-10 flex flex-col bg-[#25279e] h-fit pt-2 pb-10 overflow-hidden sm:overflow-visible max-w-[1500px] mx-auto">
       <div className="flex flex-col md:flex-row justify-between items-center w-10/12 h-full mx-auto text-white mb-5">
         {/* <p className="font-bold font-04b">Baby Boss</p> */}
         <img

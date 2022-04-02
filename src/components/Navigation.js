@@ -26,7 +26,7 @@ const Navigation = () => {
   let temp = "w-2/4 sm:w-2/5 md:w-2/6 lg:w-3/12 xl:w-1/5";
 
   return (
-    <div className="relative z-10 top-0 right-0 bg-transparent h-28 pt-2">
+    <div className="relative z-10 top-0 right-0 bg-transparent h-28 pt-2 max-w-[1500px] mx-auto">
       <div className="flex flex-row justify-between items-center w-10/12 h-full mx-auto text-white">
         {/* <p className="font-logo font-bold text-lg">Baby Boss</p> */}
         <img

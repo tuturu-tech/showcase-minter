@@ -140,6 +140,54 @@ export default {
       },
     ],
   },
+  collab: [
+    {
+      image: images.akunapie,
+      alt: "Aku Napie",
+      link: "https://opensea.io/collection/dooodle",
+    },
+    {
+      image: images.badApe,
+      alt: "Bad Ape",
+      link: "https://app.pentas.io/user/badape",
+    },
+    {
+      image: images.catverse,
+      alt: "Catverse",
+      link: "https://app.pentas.io/user/catverses",
+    },
+    {
+      image: images.gamerPunks,
+      alt: "Gamer Punks",
+      link: "https://twitter.com/gamerpunks_nft?s=21&t=-iBoiXONXvROi92HRdzvwQ",
+    },
+    {
+      image: images.Konfederasi,
+      alt: "Konfederasi",
+      link: "https://app.pentas.io/user/konfederasiNFT",
+    },
+    {
+      image: images.pamiIzmail,
+      alt: "Pamil Izmail",
+      link: "https://opensea.io/collection/beauty-in-dreamland",
+    },
+    {
+      image: images.RCN,
+      alt: "Rich Cats Nation",
+      link: "https://app.pentas.io/user/richcatsnation",
+    },
+    {
+      image: images.RoachPunk,
+      alt: "Roach Punk",
+      link: "https://app.pentas.io/user/roachpunks",
+    },
+    {
+      image: images.sanuri,
+      alt: "Sanuri Zulkefli",
+      link: "https://app.pentas.io/user/sanuri",
+    },
+  ],
+
   team: [
     {
       name: "Aleuto72",

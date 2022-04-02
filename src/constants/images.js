@@ -21,6 +21,15 @@ import rb from "../assets/logos/rb.svg";
 import bbheader from "../assets/logos/bbheader.jpeg";
 import babyboss from "../assets/logos/babyboss.png";
 import babybossf from "../assets/logos/babybossf.png";
+import akunapie from "../assets/images/akunapie.png";
+import badApe from "../assets/images/badApe.png";
+import catverse from "../assets/images/catverse.png";
+import gamerPunks from "../assets/images/gamerPunks.png";
+import Konfederasi from "../assets/images/Konfederasi.png";
+import pamiIzmail from "../assets/images/pamiIzmail.png";
+import RCN from "../assets/images/RCN.png";
+import RoachPunk from "../assets/images/RoachPunk.jpg";
+import sanuri from "../assets/images/sanuri.png";
 
 export default {
   walletlink,
@@ -46,4 +55,13 @@ export default {
   danish,
   babyboss,
   babybossf,
+  akunapie,
+  badApe,
+  catverse,
+  gamerPunks,
+  Konfederasi,
+  pamiIzmail,
+  RCN,
+  RoachPunk,
+  sanuri,
 };

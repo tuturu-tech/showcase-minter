@@ -13,6 +13,7 @@ import Mint from "./components/Mint";
 import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import Roadmap from "./components/Roadmap";
+import Collab from "./components/Collab";
 
 function App() {
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
             <Dashboard />
             <Roadmap />
             <Team />
+            <Collab />
             <FAQ />
             <Footer />
           </div>

@@ -100,7 +100,7 @@ const Mint = () => {
   return (
     <div
       id="mint"
-      className="flex flex-col md:flex-row items-center h-fit md:h-screen w-10/12 mx-auto"
+      className="flex flex-col md:flex-row items-center h-fit md:h-screen w-10/12 mx-auto max-w-[1500px] max-h-[1000px]"
     >
       <img
         src={images.mint}
@@ -109,17 +109,20 @@ const Mint = () => {
       />
       {signer && !saleState && (
         <div className="flex flex-col items-center flex-1 mb-20 md:mb-0">
-          <LoadingButton
-            loading={isMinting}
-            disabled={!signer || isMinting || isSoldOut || saleState !== 3}
-            className="bg-[#d41efc] rounded-full w-40 p-2 hover:ring-2 ring-white"
-            onClick={onMintHandler}
-          >
-            {saleState === 3 ? "Mint A Baby" : "Mint not live"}
-          </LoadingButton>
+          <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
+
+          <p className="text-center mb-4">
+            Welcome to BabyBoss exclusive club.
+            <br />
+            Join the revolution by purchasing one of your own!
+          </p>
+          <p className="text-center">
+            Unfortunately our mint is not live yet,
+            <br /> please check the mint dates in the FAQ.
+          </p>
         </div>
       )}
-      {signer && saleState && (
+      {signer && saleState === 1 && (
         <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 
@@ -209,7 +212,9 @@ const Mint = () => {
                 >
                   {saleState === 3 ? "Mint A Baby" : "Mint not live"}
                 </LoadingButton>
-                <p>Mint limit: {maxMint ? Number(maxMint) : "0"}</p>
+                <p className={`${saleState !== 3 ? "hidden" : "block"}`}>
+                  Mint limit: {maxMint ? Number(maxMint) : "0"}
+                </p>
               </div>
             )}
           </div>

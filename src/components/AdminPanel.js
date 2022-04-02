@@ -14,6 +14,7 @@ export default function AdminPanel() {
 
   const [baseURIInput, setBaseURIInput] = useState();
   const [unrevealedURIInput, setUnrevealedURIInput] = useState();
+  const [collabURIInput, setCollabURIInput] = useState();
   const [withdrawalAddressInput, setWithdrawalAddressInput] = useState();
   const [maxMintInput, setMaxMintInput] = useState();
   const [revealTimeInput, setRevealTimeInput] = useState();
@@ -23,6 +24,8 @@ export default function AdminPanel() {
   const [airdropAddress, setAirdropAddress] = useState();
   const [airdropAmount, setAirdropAmount] = useState();
   const [ownerInput, setOwnerInput] = useState();
+  const [airdropAddresses, setAirdropAddresses] = useState();
+  const [batchAmount, setBatchAmount] = useState();
 
   const [
     {
@@ -30,6 +33,7 @@ export default function AdminPanel() {
       symbol,
       baseURI,
       unrevealedURI,
+      collabURI,
       balance,
       revealTime,
       reserveMinted,
@@ -212,6 +216,27 @@ export default function AdminPanel() {
           {"set"}
         </Button>
       </Input>
+      <Input
+        label="Collab URI"
+        value={collabURIInput ?? collabURI}
+        placeholder={"ipfs://QYGFW../"}
+        onChange={(event) => setCollabURIInput(event.target.value)}
+        className="text-white"
+      >
+        <Button
+          onClick={() =>
+            callContractFunction(
+              erc721.connect(signer).setCollabURI,
+              [collabURIInput],
+              updateAdminInfo
+            )
+          }
+          className="text-white bg-[#1e50ff] hover:ring-1 ring-white text-sm mx-2"
+          disabled={!signer || !collabURIInput}
+        >
+          set
+        </Button>
+      </Input>
       <div className="flex items-center">
         <Input
           label="Address"
@@ -238,6 +263,37 @@ export default function AdminPanel() {
         >
           Airdrop
         </Button>
+      </div>
+      <div className="flex flex-col items-center">
+        <Input
+          label="Addresses"
+          placeholder={"0x000...,0x000...,0x000..."}
+          value={airdropAddresses}
+          onChange={(event) =>
+            setAirdropAddresses(event.target.value.split(","))
+          }
+        />
+        <div className="flex items-center">
+          <Input
+            label="Amount"
+            placeholder={"Number"}
+            value={batchAmount}
+            onChange={(event) => setBatchAmount(event.target.value)}
+          />
+          <Button
+            onClick={() => {
+              callContractFunction(
+                erc721.connect(signer).airdropBatch,
+                [airdropAddresses, batchAmount],
+                updateAdminInfo
+              );
+            }}
+            className="text-white bg-[#1e50ff] hover:ring-1 ring-white text-sm mx-2 self-end"
+            disabled={!signer || !airdropAddresses || !batchAmount}
+          >
+            Airdrop Batch
+          </Button>
+        </div>
       </div>
 
       <Input

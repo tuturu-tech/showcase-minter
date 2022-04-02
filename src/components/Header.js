@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <div
       id="home"
-      className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10"
+      className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10 max-w-[1500px]"
     >
       <div className="flex flex-col items-center w-3/4 mx-auto">
         <img src={images.header1} alt="Baby boss header" className=" mt-10" />

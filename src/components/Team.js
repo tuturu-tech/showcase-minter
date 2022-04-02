@@ -5,7 +5,10 @@ import Card from "./Card";
 
 const Team = () => {
   return (
-    <div id="team" className="h-fit flex flex-col items-center w-10/12 mx-auto">
+    <div
+      id="team"
+      className="h-fit flex flex-col items-center w-10/12 mx-auto max-w-[1500px]"
+    >
       <h2 className="text-3xl sm:text-4xl m-10 uppercase text-center">
         BABY BOSS HEADQUARTERS
       </h2>

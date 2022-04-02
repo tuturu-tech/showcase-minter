@@ -4,7 +4,7 @@ import { images } from "../constants";
 const Roadmap = () => {
   return (
     <div id="roadmap">
-      <div className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10 mt-10 sm:mt-0">
+      <div className="flex flex-col items-center h-fit w-10/12 mx-auto text-sm mb-10 mt-10 sm:mt-0 max-w-[1500px]">
         <h2 className="text-5xl m-10 uppercase font-retro text-center">
           ROADMAP 1.0
         </h2>

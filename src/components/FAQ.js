@@ -7,7 +7,7 @@ const FAQ = () => {
   return (
     <div
       id="faq"
-      className="flex flex-col h-fit w-10/12 items-center mx-auto mb-10 mt-20"
+      className="flex flex-col h-fit w-10/12 items-center mx-auto mb-10 mt-20 max-w-[1500px]"
     >
       <h2 className="text-4xl m-10 text-center">{content.faq.title}</h2>
       {/* <p className="text-center mb-10 text-sm w-4/6">
