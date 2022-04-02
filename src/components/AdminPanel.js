@@ -12,6 +12,7 @@ export default function AdminPanel() {
   const signer = usePriorityProvider()?.getSigner();
   const { erc721, handleTx, handleTxError } = useContracts();
 
+  const [signatureInput, setSignatureInput] = useState();
   const [baseURIInput, setBaseURIInput] = useState();
   const [unrevealedURIInput, setUnrevealedURIInput] = useState();
   const [collabURIInput, setCollabURIInput] = useState();
@@ -296,6 +297,26 @@ export default function AdminPanel() {
         </div>
       </div>
 
+      <Input
+        label="Signature address"
+        placeholder={"0x000..."}
+        value={signatureInput}
+        onChange={(event) => setSignatureInput(event.target.value)}
+      >
+        <Button
+          onClick={() => {
+            callContractFunction(
+              erc721.connect(signer).setSignerAddress,
+              [signatureInput],
+              updateMintState
+            );
+          }}
+          className="text-white bg-[#1e50ff] hover:ring-1 ring-white text-sm mx-2"
+          disabled={!signer || !signatureInput}
+        >
+          Set
+        </Button>
+      </Input>
       <Input
         label="Max mint"
         placeholder={"Number"}
