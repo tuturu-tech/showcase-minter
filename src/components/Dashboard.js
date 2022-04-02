@@ -27,42 +27,44 @@ const Dashboard = () => {
               </h4>
             </div>
           </div>
-          <div className="flex flex-row items-center justify-between w-3/4 uppercase">
+          <div className="flex flex-row gap-x-2 items-center justify-between uppercase">
             <div className="flex flex-col items-center justify-center gap-y-4 self-start">
-              <h4 className="text-xs md:text-[16px] font-bold text-center ">
+              <h4 className="text-xs md:text-[16px] font-bold text-center mt-2">
                 total supply
               </h4>
               <h4 className="text-xs md:text-[16px] font-bold text-center">
                 3,999
               </h4>
             </div>
+            <div className="w-[1px] h-20 bg-[#d41efc] self-start"></div>
             <div className="flex flex-col items-center justify-center gap-y-4 self-start">
-              <h4 className="text-xs md:text-[16px] font-bold text-center">
+              <h4 className="text-xs md:text-[16px] font-bold text-center mt-2">
                 mint price
               </h4>
               <div className="flex flex-col items-center">
                 <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
-                  S3L holder minting
+                  S3L holder
                 </h4>
-                <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
+                <h4 className="text-xs md:text-[16px] font-bold text-center mb-4">
                   0.055ETH
                 </h4>
                 <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
-                  Presale minting
+                  Presale
                 </h4>
-                <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
+                <h4 className="text-xs md:text-[16px] font-bold text-center mb-4">
                   0.066ETH
                 </h4>
                 <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
-                  Public sale minting
+                  Public sale
                 </h4>
                 <h4 className="text-xs md:text-[16px] font-bold text-center mb-2">
                   0.088ETH
                 </h4>
               </div>
             </div>
+            <div className="w-[1px] h-20 bg-[#d41efc] self-start"></div>
             <div className="flex flex-col items-center justify-center gap-y-4 self-start">
-              <h4 className="text-xs md:text-[16px] font-bold text-center">
+              <h4 className="text-xs md:text-[16px] font-bold text-center mt-2">
                 date of release
               </h4>
               <h4 className="text-xs md:text-[16px] font-bold text-center">

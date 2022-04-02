@@ -31,9 +31,9 @@ const Header = () => {
       </div>
 
       <p className="text-center mb-4 w-5/6 text-xs md:text-sm mt-10">
-        Baby Boss S3L Club, is a collection of 3999 super adorable pixelated{" "}
-        <strong>baby NFT's</strong> that were born on the{" "}
-        <strong>Ethereum blockchain.</strong>
+        Baby Boss S3L Club, is a collection of 3990 + 9 collaboration 1/1 art
+        super adorable pixelated <strong>baby NFT's</strong> that were born on
+        the <strong>Ethereum blockchain.</strong>
       </p>
       <p className="text-center mb-4 w-5/6 text-xs md:text-sm">
         Own, play, earn and connect with the <strong>community</strong> from all
@@ -42,7 +42,7 @@ const Header = () => {
       </p>
       <p className="text-center mb-10 w-5/6 text-xs md:text-sm">
         We want to represent a healthy and <strong>positive vibes</strong>{" "}
-        community and built a long lasting presence in the{" "}
+        community and build a long lasting presence in the{" "}
         <strong>metaverse.</strong>
       </p>
       <div className="relative rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400  md:w-3/4 shadow-2xl shadow-white/10 mb-20">

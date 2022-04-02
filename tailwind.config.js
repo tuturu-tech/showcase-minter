@@ -22,6 +22,9 @@ module.exports = {
       }),
       screens: {
         500: "500px",
+        550: "550px",
+        900: "900px",
+        1100: "1100px",
       },
       backgroundSize: {
         "size-200": "200% 200%",

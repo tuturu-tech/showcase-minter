@@ -35,12 +35,12 @@ const Navigation = () => {
           className="h-24 w-fit"
         />
         <button
-          className="flex md:hidden w-10 h-10 items-center justify-center"
+          className="flex 900:hidden w-10 h-10 items-center justify-center"
           onClick={toggleMenu}
         >
           <GiHamburgerMenu className="h-10 w-10" />
         </button>
-        <div className="hidden md:flex flex-row h-full items-center justify-center">
+        <div className="hidden 900:flex flex-row h-full items-center justify-center">
           <div className="flex flex-row mr-6">
             {content.nav.links.map((item, index) => (
               <Link
@@ -53,7 +53,7 @@ const Navigation = () => {
               </Link>
             ))}
           </div>
-          <div className="flex-row mr-6 hidden lg:flex">
+          <div className="flex-row mr-6 hidden 1100:flex">
             {content.nav.social.map((item, index) => (
               <a
                 key={index}

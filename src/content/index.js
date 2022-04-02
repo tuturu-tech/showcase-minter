@@ -15,6 +15,7 @@ export default {
       { text: "Roadmap", to: "roadmap", icon: images.twitter },
       { text: "Mint", to: "mint", icon: images.opensea },
       { text: "Team", to: "team", icon: images.opensea },
+      { text: "Collab", to: "collab", icon: images.opensea },
       { text: "FAQ", to: "faq", icon: images.opensea },
     ],
     social: [
@@ -26,7 +27,7 @@ export default {
             className="h-10 w-10 p-2 text-[#28299f]"
           />
         ),
-        link: "",
+        link: "https://opensea.io/collection/babybossnft",
         alt: "opensea",
       },
       {
@@ -89,17 +90,18 @@ export default {
         title: "What is Babyboss?",
         description: (
           <p>
-            Baby Boss S3L Club, is a collection of 3999 super adorable pixelated
-            baby NFT’s that were born on the Ethereum blockchain.
+            Baby Boss S3L Club, is a collection of 3990 + 9 collaboration 1/1
+            art super adorable pixelated baby NFT’s that were born on the
+            Ethereum blockchain.
             <br />
             <br />
             Own, play, earn and connect with the community from all over the
             world where we envision to create a place without a boundless
-            communication regardless ofour differences.
+            communication regardless of our differences.
             <br />
             <br />
             We want to represent a healthy and positive vibes community and
-            built a longlasting presence in the metaverse.
+            build a long lasting presence in the metaverse.
           </p>
         ),
       },
