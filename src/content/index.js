@@ -47,6 +47,19 @@ export default {
       },
     ],
   },
+  mintImages: {
+    images: [
+      images.one,
+      images.two,
+      images.three,
+      images.four,
+      images.five,
+      images.six,
+      images.seven,
+      images.eight,
+    ],
+    alt: "Sample images of BabyBoss NFTs",
+  },
   faq: {
     title: "FAQ",
     description:

@@ -15,12 +15,14 @@ const Collab = () => {
             href={item.link}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center justify-center hover:ring-1 ring-white rounded-lg"
+            className={`${
+              index === 8 ? "col-span-2 sm:col-span-1" : ""
+            } flex-1 flex items-center justify-center hover:ring-1 ring-white rounded-lg`}
           >
             <img
               src={item.image}
               alt={item.alt}
-              className="object-contain max-h-52"
+              className="object-contain max-h-20 500:max-h-28 sm:max-h-52"
             />
           </a>
         ))}

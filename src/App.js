@@ -14,6 +14,7 @@ import Header from "./components/Header";
 import Dashboard from "./components/Dashboard";
 import Roadmap from "./components/Roadmap";
 import Collab from "./components/Collab";
+import MintImages from "./components/MintImages";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
             <Navigation />
             <Header />
             <Mint />
+            <MintImages />
             <Dashboard />
             <Roadmap />
             <Team />
