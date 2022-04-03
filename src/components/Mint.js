@@ -164,7 +164,7 @@ const Mint = () => {
                 className="bg-[#d41efc] rounded-full w-7 h-7 mr-2 hover:ring-2 ring-white"
                 onClick={() => {
                   setAmount((prevAmount) => {
-                    if (prevAmount < 10) {
+                    if (prevAmount < 20) {
                       return prevAmount + 1;
                     } else {
                       return prevAmount;
