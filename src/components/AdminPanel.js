@@ -145,7 +145,7 @@ export default function AdminPanel() {
         <Button
           onClick={() => {
             callContractFunction(
-              erc721.connect(signer).setSaleState(3),
+              erc721.connect(signer).setSaleState,
               [3],
               updateMintState
             );

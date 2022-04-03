@@ -122,7 +122,7 @@ const Mint = () => {
           </p>
         </div>
       )}
-      {signer && saleState === 1 && (
+      {signer && pricePS && (
         <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 
@@ -249,7 +249,7 @@ const Mint = () => {
       {!signer && (
         <div className="flex flex-col flex-1 items-center justify-center mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
-          <p className="text-center md:text-left">
+          <p className="text-center md:text-left mb-4">
             Welcome to BabyBoss exclusive club.
             <br />
             Join the revolution by purchasing one of your own!
