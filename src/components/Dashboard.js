@@ -4,7 +4,7 @@ import { images } from "../constants";
 const Dashboard = () => {
   return (
     <div className="flex flex-col items-center h-fit w-11/12 md:w-10/12 mx-auto max-w-[1500px]">
-      <div className="rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400 w-11/12 shadow-2xl shadow-white/10 mb-10">
+      <div className="rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400 w-11/12 shadow-2xl shadow-white/10 mb-10 min-h-full">
         <div className="flex flex-col items-center gap-y-16 w-full h-full bg-[#28299f] rounded-2xl shadow-inner shadow-black/50 min-h-fit">
           <h2 className="uppercase text-3xl md:text-5xl mt-16 text-center font-04b">
             BABY BOSS
@@ -72,8 +72,8 @@ const Dashboard = () => {
               </h4>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-10 md:mb-20">
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-10 md:mb-20 min-w-0 min-h-0">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 token type
               </h4>
@@ -81,7 +81,7 @@ const Dashboard = () => {
                 ERC721
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 royalty fee
               </h4>
@@ -89,7 +89,7 @@ const Dashboard = () => {
                 7.5 %
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="font-bold text-center text-[10px] lg:text-xs">
                 Reveal after
               </h4>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                 48 hours
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 file hosting
               </h4>
