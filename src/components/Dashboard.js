@@ -72,7 +72,7 @@ const Dashboard = () => {
               </h4>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-20 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-10 md:mb-20 h-fit ">
             <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 token type

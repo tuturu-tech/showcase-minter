@@ -8,11 +8,7 @@ const Footer = () => {
     <div className="relative z-10 flex flex-col bg-[#25279e] h-fit pt-2 pb-5 overflow-hidden sm:overflow-visible max-w-[1500px] mx-auto">
       <div className="flex flex-col 900:flex-row justify-between items-center w-10/12 h-full mx-auto text-white mb-5">
         {/* <p className="font-bold font-04b">Baby Boss</p> */}
-        <img
-          src={images.babyboss}
-          alt="baby boss logo"
-          className="h-24 w-fit"
-        />
+        <img src={images.babyboss} alt="baby boss logo" className="h-24" />
         <div className="flex flex-col 900:flex-row h-full items-center justify-center">
           <div className="flex flex-row mb-4 900:mb-0  mr-0 900:mr-10">
             {content.nav.links.map((item, index) => (
