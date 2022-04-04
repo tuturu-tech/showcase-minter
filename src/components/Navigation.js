@@ -32,7 +32,7 @@ const Navigation = () => {
         <img
           src={images.babybossf}
           alt="baby boss logo"
-          className="h-24 w-fit"
+          className="h-24 object-contain"
         />
         <button
           className="flex 900:hidden w-10 h-10 items-center justify-center"
