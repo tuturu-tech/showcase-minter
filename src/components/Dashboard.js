@@ -72,8 +72,8 @@ const Dashboard = () => {
               </h4>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-10 md:mb-20 ">
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3 items-center justify-between w-11/12 lg:w-9/12 uppercase mb-10 md:mb-20 h-fit">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 token type
               </h4>
@@ -81,7 +81,7 @@ const Dashboard = () => {
                 ERC721
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 royalty fee
               </h4>
@@ -89,7 +89,7 @@ const Dashboard = () => {
                 7.5 %
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
               <h4 className="font-bold text-center text-[10px] lg:text-xs">
                 Reveal after
               </h4>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                 48 hours
               </h4>
             </div>
-            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-full">
+            <div className="flex flex-col items-center justify-center gap-y-2 bg-[#d41efc] rounded-full pr-10 pl-10 pt-1 pb-1 min-h-fit max-h-full">
               <h4 className="text-[10px] lg:text-xs font-bold text-center">
                 file hosting
               </h4>
