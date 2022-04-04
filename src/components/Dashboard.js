@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col items-center h-fit w-11/12 md:w-10/12 mx-auto max-w-[1500px]">
       <div className="rounded-2xl bg-gradient-to-r p-[6px] from-pink-600 via-gray-400 to-teal-400 w-11/12 shadow-2xl shadow-white/10 mb-10">
-        <div className="flex flex-col items-center gap-y-16 w-full h-full bg-[#28299f] rounded-2xl shadow-inner shadow-black/50">
+        <div className="flex flex-col items-center gap-y-16 w-full h-full bg-[#28299f] rounded-2xl shadow-inner shadow-black/50 min-h-fit">
           <h2 className="uppercase text-3xl md:text-5xl mt-16 text-center font-04b">
             BABY BOSS
           </h2>
