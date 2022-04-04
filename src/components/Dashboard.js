@@ -11,7 +11,7 @@ const Dashboard = () => {
           </h2>
           {/* <img src={images.babybossf} alt="babyboss logo" /> */}
           <div className="flex flex-row items-center justify-center divide-x-[1px] divide-solid divide-[#d41efc] mb-16">
-            <div className="flex flex-col items-center justify-center uppercase p-2 pr-4">
+            <div className="flex flex-col items-center justify-center uppercase p-2 pr-4 lg:mx-8">
               <h4 className="text-sm md:text-xl font-bold text-center">
                 3999 NFT
               </h4>
@@ -108,7 +108,7 @@ const Dashboard = () => {
           </div>
           <div className="flex md:hidden flex-col items-center justify-center w-fit nax-w-[92%] lg:max-w-[75%] lg:w-9/12 uppercase mt-10 mb-10 md:mb-20 mx-auto h-fit">
             <div className="flex flex-row flex-1 items-center my-2">
-              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-h-[64px] mx-2">
+              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-w-[120px] 550:min-w-[167px] min-h-[64px] mx-2">
                 <h4 className="text-[10px] lg:text-xs font-bold text-center mb-2">
                   token type
                 </h4>
@@ -116,7 +116,7 @@ const Dashboard = () => {
                   ERC721
                 </h4>
               </div>
-              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-h-[64px] mx-2">
+              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-w-[120px] 550:min-w-[167px] min-h-[64px] mx-2">
                 <h4 className="text-[10px] lg:text-xs font-bold text-center mb-2">
                   royalty fee
                 </h4>
@@ -126,7 +126,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="flex flex-row flex-1 items-center my-2">
-              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-h-[64px] mx-2">
+              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-w-[120px] 550:min-w-[167px] min-h-[64px] mx-2">
                 <h4 className="font-bold text-center text-[10px] lg:text-xs mb-2">
                   Reveal after
                 </h4>
@@ -134,7 +134,7 @@ const Dashboard = () => {
                   48 hours
                 </h4>
               </div>
-              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-h-[64px] mx-2">
+              <div className="flex flex-1 flex-col items-center justify-center bg-[#d41efc] rounded-full px-4 sm:px-10 py-1 min-w-[120px] 550:min-w-[167px] min-h-[64px] mx-2">
                 <h4 className="text-[10px] lg:text-xs font-bold text-center mb-2">
                   file hosting
                 </h4>
