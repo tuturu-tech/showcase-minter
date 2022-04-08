@@ -122,7 +122,7 @@ const Mint = () => {
           </p>
         </div>
       )}
-      {signer && pricePS && (
+      {signer && pricePS && saleState !== 0 && (
         <div className="flex flex-col items-center md:items-start flex-1 mb-20 md:mb-0">
           <h2 className="uppercase text-4xl mb-4 text-center">MINT A BABY</h2>
 

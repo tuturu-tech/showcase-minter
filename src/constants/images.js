@@ -38,6 +38,7 @@ import five from "../assets/images/5.png";
 import six from "../assets/images/6.png";
 import seven from "../assets/images/7.png";
 import eight from "../assets/images/8.png";
+import etherscan from "../assets/logos/etherscan.svg";
 
 export default {
   walletlink,
@@ -80,4 +81,5 @@ export default {
   six,
   seven,
   eight,
+  etherscan,
 };

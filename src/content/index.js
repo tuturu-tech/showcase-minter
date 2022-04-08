@@ -31,6 +31,17 @@ export default {
         alt: "opensea",
       },
       {
+        icon: (
+          <img
+            src={images.etherscan}
+            alt="opensea"
+            className="h-10 w-10 p-2 text-[#28299f]"
+          />
+        ),
+        link: "https://etherscan.io/address/0xCbC7596249C12A884b9E0035639C1ce2b00f1215",
+        alt: "etherscan",
+      },
+      {
         icon: <RiTwitterFill className="h-10 w-10 p-2 text-[#28299f]" />,
         link: "https://twitter.com/babybossnft?s=21",
         alt: "twitter",
