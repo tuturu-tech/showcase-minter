@@ -15,6 +15,7 @@ import Dashboard from "./components/Dashboard";
 import Roadmap from "./components/Roadmap";
 import Collab from "./components/Collab";
 import MintImages from "./components/MintImages";
+import Countdown from "./components/Countdown";
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
           <div className="bg-background bg-cover bg-no-repeat text-white font-retro">
             <Navigation />
             <Header />
+            <Countdown/>
             <Mint />
             <MintImages />
             <Dashboard />
