@@ -26,7 +26,7 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 const Countdown = () => {
-	const countdownOver = 1650736800;
+	const countdownOver = 1650744000;
 	const dateNow = Math.floor(Date.now() / 1000);
 	let remainingTime = countdownOver - dateNow;
 
@@ -37,7 +37,7 @@ const Countdown = () => {
 		<div className='flex flex-col w-full items-center justify-center mt-20 mb-20 md:mb-0'>
 			{Number(dateNow) < Number(countdownOver) && (
 				<div className='flex flex-col items-center justify-center'>
-					<h2 className='text-xl md:text-2xl mb-10'>Countdown to Launch</h2>
+					<h2 className='text-xl md:text-2xl mb-10'>Countdown to Relaunch</h2>
 					<div className='flex flex-col 900:flex-row'>
 						<div className='flex flex-col 500:flex-row mb-5'>
 							<span className='mr-0 mb-5 500:mb-0 500:mr-5'>
