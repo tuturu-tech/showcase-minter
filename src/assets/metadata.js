@@ -21,11 +21,11 @@ const NFTAttributes = [
 		attributes: [
 			"Mint",
 			"Tan",
+			"Gold Chain",
+			"Gold Earrings",
 			"Hoodie SSS",
 			"Happy",
 			"3D Glass",
-			"Gold Chain",
-			"Gold Earrings",
 		],
 	},
 	{
@@ -837,11 +837,11 @@ const NFTAttributes = [
 		attributes: [
 			"S3L",
 			"Albino",
+			"Diamond Chain",
+			"Diamond Earrings",
 			"Diamond Crown",
 			"Diamond Pacifier",
 			"Big Shade",
-			"Diamond Chain",
-			"Diamond Earrings",
 		],
 	},
 	{
@@ -876,11 +876,11 @@ const NFTAttributes = [
 		attributes: [
 			"Mint",
 			"Gold",
+			"Diamond Chain",
+			"Diamond Earrings",
 			"Flat Cap",
 			"Pipe",
 			"Bored",
-			"Diamond Chain",
-			"Diamond Earrings",
 		],
 	},
 	{

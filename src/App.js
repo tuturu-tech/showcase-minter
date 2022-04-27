@@ -7,18 +7,7 @@ import "animate.css";
 import { WOW } from "wowjs";
 
 import Home from "./components/Home";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import FAQ from "./components/FAQ";
-import Team from "./components/Team";
-import Mint from "./components/Mint";
-import Header from "./components/Header";
-import Dashboard from "./components/Dashboard";
-import Roadmap from "./components/Roadmap";
-import Collab from "./components/Collab";
-import MintImages from "./components/MintImages";
-import Countdown from "./components/Countdown";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/gallery/Gallery";
 
 function App() {
 	useEffect(() => {
