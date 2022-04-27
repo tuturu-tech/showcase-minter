@@ -5,8 +5,8 @@ const Checkbox = ({ value, onChangeHandler, count }) => {
 		<div className='flex items-start mb-6'>
 			<div className='flex items-center h-5'>
 				<input
-					id='remember'
-					aria-describedby='remember'
+					id={value}
+					aria-describedby={value}
 					type='checkbox'
 					value={value}
 					onChange={() => onChangeHandler(value)}
@@ -14,9 +14,10 @@ const Checkbox = ({ value, onChangeHandler, count }) => {
 					required
 				/>
 			</div>
+
 			<div className='ml-3 text-sm'>
 				<label
-					htmlFor='remember'
+					htmlFor={value}
 					className='font-medium text-white dark:text-gray-300 text-[10px] md:text-sm'>
 					{value} ({count})
 				</label>
