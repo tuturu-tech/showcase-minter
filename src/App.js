@@ -22,7 +22,7 @@ function App() {
 					<ConfettiProvider>
 						<Routes>
 							<Route path='/' element={<Home />} />
-							<Route path='/gallery' element={<Gallery />} />
+							{/* <Route path='/gallery' element={<Gallery />} /> */}
 						</Routes>
 					</ConfettiProvider>
 				</TransactionContextProvider>
