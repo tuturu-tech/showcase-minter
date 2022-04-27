@@ -1,6 +1,6 @@
 import React from "react";
 
-const Checkbox = ({ value, onChangeHandler }) => {
+const Checkbox = ({ value, onChangeHandler, count }) => {
 	return (
 		<div className='flex items-start mb-6'>
 			<div className='flex items-center h-5'>
@@ -18,7 +18,7 @@ const Checkbox = ({ value, onChangeHandler }) => {
 				<label
 					htmlFor='remember'
 					className='font-medium text-white dark:text-gray-300 text-[10px] md:text-sm'>
-					{value}
+					{value} ({count})
 				</label>
 			</div>
 		</div>

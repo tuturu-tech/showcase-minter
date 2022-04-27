@@ -231,6 +231,11 @@ const Gallery = () => {
 											return (
 												<Checkbox
 													value={item}
+													count={
+														sortedNFTs.filter((nft) =>
+															nft.attributes.includes(item)
+														).length
+													}
 													key={index}
 													onChangeHandler={onChangeHandler}
 												/>
@@ -243,6 +248,13 @@ const Gallery = () => {
 					</div>
 					<div className='w-3/5 550:w-3/4'>
 						<h2 className='uppercase mb-5 text-xl'>Gallery</h2>
+						<div className='flex flex-row uppercase mb-5 text-sm items-center'>
+							<h2 className='mr-2'>Filters:</h2>
+							<h2 className='mr-2 bg-[#d41efc] p-1 rounded-lg'>
+								{selectedFilters.length}
+							</h2>
+							<h2>{selectedFilters.toString()}</h2>
+						</div>
 						<div className='grid grid-cols-2 550:grid-cols-3 sm:grid-cols-4'>
 							{NFTs.filter(
 								(item, index) => index >= offset && index - offset < 16
