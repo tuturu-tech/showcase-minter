@@ -51,11 +51,11 @@ const Navigation = () => {
 								{item.text}
 							</Link>
 						))}
-						<LinkRouter
+						{/* 						<LinkRouter
 							to='/gallery'
 							className='p-3 text-sm cursor-pointer hover:scale-110'>
 							Gallery
-						</LinkRouter>
+						</LinkRouter> */}
 					</div>
 					<div className='flex-row mr-6 hidden xl:flex'>
 						{content.nav.social.map((item, index) => (
@@ -110,11 +110,11 @@ const Navigation = () => {
 								{item.text}
 							</Link>
 						))}
-						<LinkRouter
+						{/* 						<LinkRouter
 							to='/gallery'
 							className='p-3 text-sm cursor-pointer hover:scale-110'>
 							Gallery
-						</LinkRouter>
+						</LinkRouter> */}
 					</div>
 				</div>
 			</div>

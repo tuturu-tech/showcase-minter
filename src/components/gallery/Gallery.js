@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/* import React, { useState, useEffect } from "react";
 import GalleryNav from "./GalleryNav";
 import NFTAttributes from "../../assets/metadata";
 import Card from "./Card";
@@ -300,3 +300,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+ */
