@@ -3,17 +3,17 @@ import { useTx } from "./useTx";
 import { config } from "../config";
 import { usePriorityProvider } from "../lib/connectors";
 
-const { abi: erc721ABI } = require("../data/BabyBoss.json");
+const { abi: erc721ABI } = require("../data/Showcase.json");
 
 export const ERC721 = new ethers.Contract(config.erc721Address, erc721ABI);
 
 export function useContracts() {
-  const { handleTx, handleTxError, alert } = useTx();
-  const provider = usePriorityProvider();
+	const { handleTx, handleTxError, alert } = useTx();
+	const provider = usePriorityProvider();
 
-  const erc721 = ERC721.connect(provider);
+	const erc721 = ERC721.connect(provider);
 
-  window.nft = erc721;
+	window.nft = erc721;
 
-  return { erc721, handleTx, handleTxError, alert };
+	return { erc721, handleTx, handleTxError, alert };
 }

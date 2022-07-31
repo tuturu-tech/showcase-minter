@@ -7,7 +7,6 @@ import "animate.css";
 import { WOW } from "wowjs";
 
 import Home from "./components/Home";
-import Gallery from "./components/gallery/Gallery";
 
 function App() {
 	useEffect(() => {
@@ -22,7 +21,6 @@ function App() {
 					<ConfettiProvider>
 						<Routes>
 							<Route path='/' element={<Home />} />
-							{/* <Route path='/gallery' element={<Gallery />} /> */}
 						</Routes>
 					</ConfettiProvider>
 				</TransactionContextProvider>

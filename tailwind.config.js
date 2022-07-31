@@ -40,13 +40,14 @@ module.exports = {
 			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				background: "url('./assets/images/Bg.png')",
 			},
 			colors: {
 				base: "#1c1c1c",
 				light: "#f2efe6",
 				baseBlue: "#1e50ff",
 				basePink: "#d41efc",
+				primary: "#c6ff00",
+				secondary: "#e040fb",
 			},
 			fontFamily: {
 				retro: ["Retro Gaming"],
